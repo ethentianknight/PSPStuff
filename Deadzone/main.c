@@ -7,7 +7,6 @@
 #include <pspdisplay.h>
 #include <pspctrl.h>
 #include "../../common/callback.h"
-#include <windows.h>
 
 //defs
 #define VERS 0
@@ -51,7 +50,7 @@ int main()
 		//waits a second, sets deadzone(left) to result -5
 		if (buttonInput.Lx <= 10)
 		{
-			printf("\nPass check");
+			printf("\nPass check at %d", buttonInput.Lx);
 			Sleep(1000);
 			deadzoneLeft = buttonInput.Lx;
 			printf("\nLeft: %d", deadzoneLeft);
@@ -74,4 +73,9 @@ int main()
 
 }
 
-
+void Sleep(int i)
+{
+	int count;
+	for (count = 0; count < i; count++)
+		;
+}

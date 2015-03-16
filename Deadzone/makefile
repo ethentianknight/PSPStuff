@@ -19,7 +19,7 @@ LDFLAGS =
 #Eboot creation and pictures/icons
 EXTRA_TARGETS = EBOOT.PBP
 PSP_EBOOT_TITLE = Dead Zone Test
-#PSP_EBOOT_ICON = ICON0.png
+PSP_EBOOT_ICON = ICON0.png
 #PSP_EBOOT_PIC1 = PIC1.png
 #PSP_EBOOT_SND0 = SND0.at3
 
